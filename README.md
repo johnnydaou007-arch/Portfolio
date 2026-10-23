@@ -6,7 +6,7 @@ Welcome to my engineering portfolio. This site highlights selected projects in R
 
 My portfolio website is hosted on GitHub Pages:
 
-**https://johnnydaou007-arch.github.io/Portfolio/#projects**
+**https://johnnydaou007-arch.github.io/Portfolio**
 
 ## Featured Areas
 
