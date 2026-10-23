@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Johnny Abi Zeid Daou - Electrical Engineering Portfolio</title>
+  <meta name="description" content="Electrical engineering portfolio of Johnny Abi Zeid Daou, focused on RF systems, SDR research, embedded hardware, and PCB design.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+    <a href="#top" class="logo" aria-label="Johnny Daou home">JD<span>.</span></a>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <header id="top">
+    <div class="wrap hero-wrap">
+      <img class="profile-photo" src="images/profile-photo.jpg" alt="Professional portrait of Johnny Abi Zeid Daou">
+      <p class="eyebrow"><span class="status-dot"></span> ELECTRICAL ENGINEERING · UMASS BOSTON</p>
+      <h1>Johnny Abi Zeid Daou</h1>
+      <h2 class="hero-subtitle">RF systems, SDR research &amp; embedded hardware.</h2>
+      <p class="intro">I design, build, and test electronic systems—from microwave circuits and spectrum-sensing tools to embedded prototypes.</p>
+      <div class="hero-actions"><a href="resume.pdf" class="btn">View résumé <span aria-hidden="true">↗</span></a>
+      <a href="#projects" class="btn outline">Explore projects</a></div>
+      <p class="hero-note">Electrical Engineering · Expected May 2027 · GPA 3.784/4.00</p>
+      <p class="work-authorization">U.S. permanent resident · Authorized to work in the U.S. without sponsorship</p>
+    </div>
+  </header>
+
+  <main>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I'm an electrical engineering student at the University of Massachusetts Boston,
+        graduating in May 2027. My interests are in RF and wireless systems, embedded
+        hardware, and PCB design.
+      </p>
+      <div class="stats">
+        <div><span>3.784/4.00</span><small>GPA</small></div>
+        <div><span>May 2027</span><small>Expected graduation</small></div>
+        <div><span>Dean’s List</span><small>Academic recognition</small></div>
+      </div>
+    </section>
+
+    <section id="research">
+      <h2>Research</h2>
+
+      <div class="card">
+        <p class="mono">In Progress · University of Massachusetts Boston</p>
+        <h3>Distributed Spectrum Sensing</h3>
+        <ul>
+          <li>Developing a distributed RF sensing framework for real-time spectrum monitoring,
+            channel occupancy estimation, and dynamic spectrum access in multi-node wireless networks</li>
+          <li>Writing Python and Bash tools to configure SDR receiver nodes, manage network
+            communication, and automate data collection and processing</li>
+          <li>Running multi-node RF measurements and analyzing signal power, channel use, and
+            sensing performance under different channel conditions</li>
+        </ul>
+        <div class="tags">
+          <span>SDR</span><span>GNU Radio</span><span>Python</span><span>Bash</span><span>Wireless Networks</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <div class="card project">
+        <div class="pics project-placeholder" role="img" aria-label="Secure robot PCB project in progress; board layout image not yet available">
+          <div class="placeholder-mark">PCB / EMBEDDED SECURITY</div>
+          <div class="placeholder-lines"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+          <p>Project in progress · PCB image coming soon</p>
+        </div>
+        <div class="info">
+          <p class="mono">In Progress</p>
+          <h3>Secure Blockchain PCB for Autonomous Robots</h3>
+          <ul>
+            <li>Custom PCB with an ESP32 and NXP SE050 secure element for hardware-backed identity,
+              tamper detection, and safety monitoring</li>
+            <li>Design targets: under 40 g, under 0.8 W, and 4.5–28 V input</li>
+            <li>Planned checks include SHA-256 hashing at 10 Hz, signature latency under 20 ms, and over 100 KB free memory</li>
+            <li>Planned features include key revocation, tamper-evident logging, and an ML-based PCB health monitor</li>
+          </ul>
+          <div class="tags">
+            <span>ESP32</span><span>KiCAD</span><span>Embedded C</span><span>Blockchain</span><span>ML</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card project">
+        <div class="pics">
+          <img src="images/microstrip-schematic.png" alt="AWR schematic of the three-section microstrip transformer" class="full">
+          <img src="images/microstrip-s11.png" alt="S11 plot showing return loss from 1 to 6 GHz" class="full">
+        </div>
+        <div class="info">
+          <p class="mono">Spring 2025</p>
+          <h3>Microstrip Impedance Matching Transformer</h3>
+          <ul>
+            <li>Designed a three-section Chebyshev transformer to match 200 Ω to 50 Ω on Rogers RT/Duroid 5880</li>
+            <li>Simulation showed about 23 dB or better return loss from 2.5 to 5.5 GHz</li>
+            <li>Narrowest trace: 16.35 mil, above the 6 mil fabrication limit</li>
+          </ul>
+          <div class="tags">
+            <span>RF Design</span><span>AWR Microwave Office</span><span>Transmission Lines</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card project">
+        <div class="pics">
+          <img src="images/piano-circuit.png" alt="Circuit schematic: Raspberry Pi 4 wired to five NeoPixels and five key switches" class="full">
+          <img src="images/piano.jpg" alt="LED piano teacher being played, with the touchscreen and NeoPixels over the keys">
+          <img src="images/piano-code-flowchart.jpg" alt="LED piano code flowchart" class="full">
+
+        </div>
+        <div class="info">
+          <p class="mono">Spring 2025</p>
+          <h3>Neopixel Piano Teacher</h3>
+          <ul>
+            <li>Low-cost Raspberry Pi 4 add-on for a keyboard: NeoPixels show which key to press,
+              GPIO switches detect presses, and a 7" touchscreen runs the menu</li>
+            <li>Python code loads MIDI songs and runs two modes: Teacher Mode waits for each
+              correct key, Follow Mode plays in real time and checks every press is on beat</li>
+            <li>Prototype tests at 60, 90 and 120 BPM: near 100% accuracy at 60 and 90 BPM,
+              which showed faster tempos needed better timing</li>
+            <li>User testing with 7 people: key error rate dropped from 0.22 to 0.11 and song
+              time from about 30 s to 10 s over repeated tries</li>
+            <li>Worked on a 5-person team; contributed to hardware/software integration and user testing</li>
+          </ul>
+          <div class="tags">
+            <span>Raspberry Pi</span><span>Python</span><span>NeoPixel</span><span>GPIO</span><span>MIDI</span><span>User Testing</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card project">
+        <div class="pics">
+          <img src="images/am-radio-schematic.png" alt="LTspice schematic of the AM radio receiver" class="full">
+        </div>
+        <div class="info">
+          <p class="mono">Spring 2024</p>
+          <h3>AM Radio Receiver</h3>
+          <ul>
+            <li>Designed and built an AM receiver to pick up a specific broadcast station</li>
+            <li>Signal chain: tunable LC front end, LT1357 gain stage, diode envelope detector, OP07 buffer,
+              RC low-pass filter, and an LM386 amp driving an 8 Ω speaker</li>
+            <li>Analyzed gain, filter response, and demodulation while fixing noise and impedance mismatches</li>
+            <li>Adjusted the design based on how it behaved in real life</li>
+          </ul>
+          <div class="tags">
+            <span>Analog Circuits</span><span>LTspice</span><span>Op-Amps</span><span>Filters</span><span>Demodulation</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card project">
+        <div class="pics">
+          <iframe src="https://www.youtube.com/embed/iyC8-_OaSxU" title="Arduino air guitar demo" allowfullscreen></iframe>
+          <img src="images/air-guitar-circuit.png" alt="Circuit diagram: Arduino with glove, accelerometer, ultrasonic sensor, potentiometers and speaker" class="full">
+          <p class="credit">Circuit and base code adapted from an Instructables air guitar guide.</p>
+        </div>
+        <div class="info">
+          <p class="mono">Fall 2023 · ENGIN 104</p>
+          <h3>Arduino Air Guitar</h3>
+          <ul>
+            <li>Glove with conductive fabric on the palm and fingers: touching a finger to the palm
+              closes a circuit to an Arduino pin, and each finger picks a different note</li>
+            <li>Accelerometer in the strumming hand detects strums, and an ultrasonic sensor
+              measures the distance between the hands to change pitch</li>
+            <li>Potentiometers set the note length and strum sensitivity</li>
+            <li>Sound made in C with Arduino timer interrupts and PWM, playing a stored guitar waveform to a speaker</li>
+            <li>Coordinated a 5-person team across hardware and software</li>
+          </ul>
+          <div class="tags">
+            <span>Arduino</span><span>C</span><span>Accelerometer</span><span>Ultrasonic Sensor</span><span>PWM Audio</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card project">
+        <div class="pics">
+          <img src="images/heartbeat-circuit.png" alt="Heartbeat sensor schematic: IR LED, phototransistor, filters, cascode MOSFET amplifier and LED switch" class="full">
+        </div>
+        <div class="info">
+          <p class="mono">Electronics 2</p>
+          <h3>Optical Heartbeat Sensor</h3>
+          <ul>
+            <li>An IR LED shines through the finger and a phototransistor picks up the small change
+              in light with each heartbeat (20 to 90 mV)</li>
+            <li>High-pass and low-pass RC filters keep the 1 to 5 Hz heartbeat and cut noise</li>
+            <li>Cascode MOSFET amplifier designed by hand for a gain of about 15 V/V, with bias and
+              saturation checks</li>
+            <li>A MOSFET switch blinks an LED with each beat</li>
+            <li>The amplifier hit its 15 V/V target; the phototransistor also picked up heat from
+              the finger, which threw off the reading and is the next thing to fix</li>
+          </ul>
+          <div class="tags">
+            <span>MOSFET Amplifiers</span><span>Filters</span><span>Sensors</span><span>Analog Design</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card project">
+        <div class="pics">
+          <img src="images/ac-detector-schematic.png" alt="LTspice schematic of the AC voltage detector with three NPN transistors" class="full">
+        </div>
+        <div class="info">
+          <p class="mono">Fall 2025 · Electronics 1</p>
+          <h3>Non-Contact AC Voltage Detector</h3>
+          <ul>
+            <li>Pen-style tester that lights an LED near a live AC wire without touching it</li>
+            <li>A coil picks up a tiny current (about 1 µA) from the wire's electric field</li>
+            <li>Three cascaded 2N3904 NPN transistors boost it to about 5 mA to drive the LED,
+              with each stage's operating region worked out by hand</li>
+            <li>Soldered on a protoboard and tested on a laptop charger: LED on when plugged in,
+              off when unplugged</li>
+          </ul>
+          <div class="tags">
+            <span>BJT</span><span>LTspice</span><span>Analog Circuits</span><span>Soldering</span>
+          </div>
+        </div>
+      </div>
+<!--
+       --Copy this block for each extra project --
+      <div class="card project">
+        <div class="pics">
+          <img src="images/project6.jpg" alt="Project name">
+        </div>
+        <div class="info">
+          <p class="mono">Semester Year</p>
+          <h3>Project Name</h3>
+          <ul>
+            <li>What you built</li>
+            <li>How you built it</li>
+            <li>Result or numbers</li>
+          </ul>
+          <div class="tags">
+            <span>Tool</span><span>Tool</span><span>Tool</span>
+          </div>
+        </div>
+      </div>
+       --End of block --
+-->
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Software</h3>
+          <div class="tags">
+            <span>MATLAB</span><span>Python</span><span>C</span><span>LTspice</span><span>AWR Microwave Office</span>
+            <span>AutoCAD</span><span>KiCAD</span><span>Microsoft Office</span>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Hardware</h3>
+          <div class="tags">
+            <span>Oscilloscopes</span><span>Signal Generators</span><span>SDR</span><span>Arduino</span>
+            <span>Raspberry Pi</span><span>ESP32</span><span>PCB Design</span>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Coursework</h3>
+          <div class="tags">
+            <span>RF/Microwave Circuits</span><span>Signals &amp; Systems</span><span>Digital/Analog Design</span>
+            <span>Embedded Systems</span><span>Transmission Lines</span><span>Power Systems</span><span>Semiconductors</span>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Languages</h3>
+          <div class="tags">
+            <span>Arabic</span><span>English</span><span>French</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Open to internship opportunities in RF, wireless systems, embedded hardware, and electronics design.</p>
+      <div class="contact-actions">
+        <a href="mailto:Johnnydaou007@gmail.com" class="btn">Email Me</a>
+        <a href="tel:+16179379737" class="btn outline">Call (617) 937-9737</a>
+        <a href="https://www.linkedin.com/in/johnnydaou007" class="btn outline" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+      </div>
+      <p class="contact-details"><strong>Email:</strong> <a href="mailto:Johnnydaou007@gmail.com">Johnnydaou007@gmail.com</a></p>
+      <p class="contact-details"><strong>Phone:</strong> <a href="tel:+16179379737">(617) 937-9737</a></p>
+      <p class="contact-details"><strong>Languages:</strong> Arabic, English, French</p>
+      <p class="contact-details"><strong>Work authorization:</strong> U.S. permanent resident; authorized to work in the U.S. without sponsorship.</p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Johnny Abi Zeid Daou</p>
+  </footer>
+
+</body>
+</html>
